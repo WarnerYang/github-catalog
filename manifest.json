@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "github-cataLog",
+    "version": "1.0.0",
+    "description": "一款展示 github 项目 README 目录的 Chrome 扩展",
+    "homepage_url": "https://github.com/WarnerYang/github-cataLog",
+    "author": "Warner",
+    "icons": {
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.github.com/*",
+                "https://github.com/*"
+            ],
+            "js": ["custom.js"]
+        }
+    ]
+}
