@@ -12,10 +12,11 @@
     "content_scripts": [
         {
             "matches": [
-                "https://www.github.com/*",
-                "https://github.com/*"
+                "*://github.com/*"
             ],
-            "js": ["custom.js"]
+            "js": [
+                "custom.js"
+            ]
         }
     ]
 }
